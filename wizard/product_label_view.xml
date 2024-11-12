@@ -13,6 +13,9 @@
                         icon="fa-print"
                     />
                     <button
+                        name="action_print"
+                        type="object"
+                        context="{'print_mode':'html'}"
                         string="Preview"
                         class="btn btn-secondary"
                         icon="fa-barcode"
@@ -26,6 +29,11 @@
                     </group>
                     <notebook>
                         <page string="Products" name="product_labels">
+                            <field name="product_ids" mode="tree">
+                                <tree>
+                                    <field name="barcode"/>
+                                </tree>
+                            </field>
 
                         </page>
                     </notebook>
