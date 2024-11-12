@@ -8,6 +8,8 @@
             <form string="Product Label Form">
                 <header>
                     <button
+                        name="action_print"
+                        type="object"
                         string="Print PDF"
                         class="btn btn-primary"
                         icon="fa-print"
